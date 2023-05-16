@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>Contato Profissional</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <div class="form-content">
+
+            <form action="post" action="recebedados.php" >
+
+                <fieldset class="fieldout">
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="inputsingle">
+                        <label for="iName">Nome Completo</label>
+                        <input type="text" name="iName" id="iName" placeholder="Nome Completo" required autofocus>
+                    </div>
+
+                    <fieldset class="fieldentry">
+                        <legend>Gênero</legend>
+
+                        <div>
+                            <input type="radio" name="nGender" id="iMasc">
+                            <label for="iMasc">Masculino</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="nGender" id="iFem">
+                            <label for="iFem">Feminino</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="nGender" id="iOther">
+                            <label for="iOther">Outro</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" name="nGender" id="iNotAn">
+                            <label for="iNotAn">Prefiro não responder</label>
+                        </div>
+                        
+
+                    </fieldset>  
+
+                    <div>
+                        <label for="iDate">Data de nascimento</label>
+                        <input type="date" name="nBorn" id="iBorn" required>
+                    </div>
+
+                    <div class="inputsingle">
+                        <label for="iEmail"> E-mail </label>
+                        <input type="email" name="nEmail" id="iEmail" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="inputsingle">
+                        <label for="iPersonalweb">Site Pessoal</label>
+                        <input type="url" name="nPersonalweb" id="iPersonalweb" placeholder="Linkedin, Instragram etc.">
+                    </div>
+
+
+                    <fieldset class="fieldentry">
+                        <legend>Endereço</legend>
+
+                        <div class="inputsingleadr">
+                            <label for="iRua">Rua</label>
+                            <input type="text" name="nRua" id="iRua" placeholder="Rua">
+                        </div>
+
+                        <div class="inputsingleadr">
+                            <label for="iNumber">Número</label>
+                            <input type="number" name="nNumber" id="iNumber" placeholder="Número">
+                        </div>
+
+                        <div class="inputsingleadr">
+                            <label for="iComplement">Complemento</label>
+                            <input type="text" name="nComplement" id="iComplement" placeholder="Complemento">
+                        </div>
+
+                    </fieldset>
+
+                    <div>
+                        <label for="iCity">Cidade</label>
+                        <select name="estado">
+                        <option value="Al">Alvorada</option>
+                        <optio value="Co">Canoas</option>
+                        <option value="Es">Esteio</option>
+                        <option value="gV">Gravataí</option>
+                        <option value="Nh">Novo Hamburgo</option>
+                        <option value="Pf">Passo Fundo</option>
+                        <option value="Pl">Pelotas</option>
+                        <option value="Pa">Porto Alegre</option>
+                        <option value="Sl">São Leopoldo</option>
+                    </select>
+                    </div>
+
+                    <div class="inputsingle">
+                        <label class="inputsingle" for="iPhone">Telefone</label>
+                        <input type="tel" name="nPhone" id="iPhone" placeholder="Telefone">
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="fieldout">
+                    <legend>Dados Profissionais</legend>
+
+                    <fieldset class="fieldentry">
+                        <legend>Área de Atuação</legend>
+
+                        <div>
+                            <input type="checkbox" name="nDS" id="iDS">
+                            <label for="iDS">Desing</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nFE" id="iFE">
+                            <label for="iFE">Front-END</label>   
+                        </div>        
+                        
+                        <div>
+                            <input type="checkbox" name="nBE" id="iBE">
+                            <label for="iBE">Back-End</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nES" id="iES">
+                            <label for="iES">Engenharia de Software</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nDB" id="iDB">
+                            <label for="iDB">Data Bases</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nQA" id="iQA">
+                            <label for="iQA">QA</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nAN" id="iAN">
+                            <label for="iAN">Análise de Negócios</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="nSup" id="iSup">
+                            <label for="iSup">Manutenção</label>
+                        </div>
+                        
+
+                    </fieldset>
+                    
+                    <label for="textarea">Breve histórico profissional</label>
+                    <textarea></textarea>
+
+                    <label for="iup">Upload Curriculo</label>
+                    <input type="file" name="nup" id="iup">
+
+                    <label for="iHoras">Horas semanais desejadas</label>
+                    <input type="range" name="nHoras" id="iHoras" min="10" max="40" step="10">
+
+                </fieldset>
+
+                <fieldset class="fieldout">
+                    <legend>Agendamento de entrevista</legend>
+
+                    <label for="iMdia">Dia</label>
+                    <input type="date" name="nMdia" id="iMdia">
+
+                    <label for="iMhour">Horário</label>
+                    <input type="time" name="nMhour" id="iMhour">
+
+
+                </fieldset>
+
+                <div class="buttonform">
+                    <button  type="reset">Resetar</button>
+
+                    <button  type="submit">Enviar</button> 
+                </div>
+
+                
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

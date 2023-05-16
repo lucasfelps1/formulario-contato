@@ -1,0 +1,97 @@
+
+body {
+    padding: 5px;
+    margin: 0px;
+    background-color: #ccc1b9;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+.form-content {
+    margin: auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 6px;
+}
+
+.form-content input:focus {
+    outline: auto;
+    outline-color: rgb(182, 230, 230);
+}
+
+.form-content fieldset {
+    border: 1px solid rgb(182, 182, 182);;
+    border-radius: 6px;
+}
+
+.form-content fieldset fieldset {
+    border: 1px solid rgb(182, 182, 182);;
+    border-radius: 6px;
+}
+
+.inputsingle {
+    padding: 5px;
+}
+
+.inputsingle input{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 30px;
+}
+
+.inputsingleadr input {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 30px;
+}
+
+.fieldentry {
+    display: flex;
+    flex-direction: column;
+    width: 300px;    
+    gap: 20px;
+}
+
+.fieldout {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.buttonform {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.buttonform button {
+    color: white;
+    background-color: #7d736c;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    border: 1px;
+}
+
+.buttonform button:hover {
+    border: 3px solid black;
+    background-color: #69615b;
+    transition: .8s;
+}
